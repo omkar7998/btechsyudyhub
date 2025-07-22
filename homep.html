@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTECHSTUDYHUB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(239, 176, 17); 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: space-between; 
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif; 
+            font-size: 80px; 
+            font-weight: bold; 
+            margin-bottom: 30px;
+            text-transform: uppercase; 
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(90deg, #f9500d, #028bd5);
+            -webkit-background-clip: text; 
+            color: transparent; 
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contact-form {
+            background-color: rgba(147, 54, 54, 0.7);
+            padding: 30px;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: none;
+            background-color: #f1f1f1;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        header {
+            text-align: center;
+            color: #333;
+            padding: 20px;
+            font-size: 2.5em;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header-links {
+            margin-left: 20px;
+            font-size: 1.5em;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .header-links:hover {
+            color: #555;
+        }
+
+        .button-container {
+            margin-top: 10px;
+            color: #7c340be4;
+            display: flex;
+            justify-content: center; 
+            gap: 15px; 
+        }
+
+        .navigate-button {
+            font-size: 1.2em;
+            padding: 7px 20px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .navigate-button:hover {
+            background-color: #e96914;
+        }
+
+        .branches-header {
+            margin-top: 20px;
+            font-size: 2em;
+            color: #a62727;
+        }
+
+        .login-link {
+            text-align: center; 
+            margin-top: 15px; 
+        }
+
+        .login-link a {
+            color: #0c9fb5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media query for responsiveness - Adjust as needed */
+        @media (max-width: 768px) { 
+            h3 {
+                font-size: 40px; /* Smaller title on mobile */
+            }
+
+            .contact-form {
+                width: 90%; /* Make form take up more of the screen width */
+            }
+
+            nav a {
+                margin: 0 10px; /* Reduce space between nav links */
+                padding: 8px 15px; /* Smaller padding for nav links */
+            }
+
+            /* Add more styles as needed to adjust layout for smaller screens */
+        }
+    </style>
+</head>
+<body>
+
+
+    <h3>BTECH STUDY HUB</h3>
+    
+    <div class="container">
+        <div class="contact-form">
+            <h2>SIGN UP</h2>
+            <form action="signup_process.php" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Password</label>
+                <input type="password" id="message" name="message" required>
+    
+                <button type="submit">Submit</button>
+            </form>
+            <p class="login-link">Already have an account, <a href="login.html">Log In</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>

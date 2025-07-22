@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* Body and Background Settings */
+        body {
+            background: linear-gradient(135deg, #4c83ff, #9f44d3);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Login Container */
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.6);  /* Slightly transparent black */
+            padding: 30px;
+            border-radius: 8px;
+            width: 320px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            color: white;
+        }
+
+        /* Site Title */
+        .site-title {
+            color: #fff;
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Input Groups */
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: none;
+            background-color: #f1f1f1;
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* Login Button */
+        .login-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .login-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Sign Up Link */
+        .signup-link {
+            color: #fff;
+            margin-top: 15px;
+        }
+
+        .signup-link a {
+            color: #ff6a00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+        /* Unique and Attractive Heading */
+.page-title {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff6a00, #ee0979);  /* Gradient Text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);  /* Soft Shadow */
+    animation: glow 2s infinite alternate;
+    z-index: 10;
+}
+
+/* Glow Animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff6a00, 0 0 10px #ff6a00, 0 0 15px #ee0979;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff6a00, 0 0 30px #ee0979, 0 0 40px #ee0979;
+    }
+}
+
+    
+    </style>
+</head>
+<body>
+    <h1 class="page-title"> BTech Study Hub</h1>
+
+
+   
+   
+    <div class="login-container">
+        <!-- BOLD HEADING ADDED -->
+        <h2 class="site-title">USER LOGIN</h2> 
+        
+        <form action="login_process.php" method="POST">
+            <div class="input-group">
+                <label for="username">EMAIL ID</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your email">
+            </div>
+        
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+        
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <!-- Add the Sign Up link -->
+        <p class="signup-link">Don't have an account? <a href="homep.html">Sign Up</a></p>
+        <p><a href="forgot-password.html">Forgot Password?</a></p>
+
+    </div>
+
+</body>
+</html>

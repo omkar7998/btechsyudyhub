@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - BTech Study Hub</title>
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Pacifico&display=swap');
+
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: url('https://source.unsplash.com/1600x900/?technology,education') no-repeat center center/cover;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        /* Overlay Effect */
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Main Content */
+        .container {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Heading */
+        h1 {
+            font-size: 3.5em;
+            font-family: 'Pacifico', cursive;
+            background: linear-gradient(90deg, #ffcc00, #ff6666);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            animation: slideIn 1.2s ease-in-out;
+        }
+
+        /* Quote */
+        .quote {
+            font-size: 1.5em;
+            font-style: italic;
+            margin: 20px auto;
+            width: 60%;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Button */
+        .hub-button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff6600, #ff3366);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .hub-button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #ff3300, #ff0099);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 3;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background: linear-gradient(45deg, #ff3300, #ff0099);
+        }
+
+        /* Media query for responsiveness - Adjust as needed */
+        @media (max-width: 768px) {
+            nav a {
+                margin: 0 10px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="homep.html">SIGN IN</a> <!-- New Sign In button -->
+        <a href="login.html">LOGIN</a> <!-- New Login button -->
+        <a href="branches.html">BRANCHES</a>
+        <a href="mailto:btechstudyhub@gmail.com">MAIL ID</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="feedback.html">FEEDBACK</a>
+        <a href="thank.html">LOGOUT</a>
+        
+    </nav>
+
+    <!-- Background Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to BTech Study Hub</h1>
+        <div class="quote">"Education is not the learning of facts, but the training of the mind to think." – Albert Einstein</div>
+    
+    </div>
+
+</body>
+</html>
